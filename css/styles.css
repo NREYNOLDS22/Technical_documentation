@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@300;600&display=swap');
+
+
+
+
+body {
+    background-color: rgb(5, 19, 34);
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
+}
+
+nav {  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
+    overflow-y: scroll;
+}
+
+@media(min-width: 768px){
+    #nav-bar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 76%;
+    }
+    #main-doc {
+        margin-left: 25%;
+    }
+    .code-block {
+        width: 70%;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;   
+    color: white;
+}
+
+
+
+nav li {
+    padding-top: .5rem;
+    padding-bottom: .20rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: rgb(228, 214, 17);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+/**change hr to a line in CSS using bottom border and specifying length**/
+hr {
+    width: 40px;
+    color: white;
+}
+
+.section-header {
+    font-weight: 600;
+    font-size: 1.75rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+    font-variant: small-caps;
+}
+
+.top-link {
+    text-align: right;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(120, 124, 130);
+}
+
+.note {
+    /*text-align: right;*/
+    background-color: rgb(0, 0, 255, .25);
+    padding: 1rem 1rem;
+    border-left: 10px solid /*white*/rgb(228, 214, 17);
+    margin-top: 2rem;
+}
+
+section li {
+    list-style-type: square;
+}
+
+.code-block {
+    background-color: rgb(120, 124, 130);
+    padding: 1rem;
+    font-size: .7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: .5rem;
+    width: 97%;
+}
+
+footer {
+    font-style: italic;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #788682 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #788682;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
